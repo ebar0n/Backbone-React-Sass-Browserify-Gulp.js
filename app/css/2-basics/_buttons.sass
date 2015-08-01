@@ -1,0 +1,48 @@
+/* Buttons */
+
+.btn,
+button,
+input[type="button"]
+input[type="reset"],
+input[type="submit"],
+  border: 1px solid transparent
+  box-sizing: border-box
+  cursor: pointer
+  display: inline-block
+  font-size: 12px
+  font-weight: 600
+  height: 38px
+  letter-spacing: .1rem
+  line-height: 38px
+  padding: 0 0.71rem
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  white-space: nowrap
+  width: 100%
+
+  &:hover,
+  &:active,
+  &:focus
+    outline: 0
+
+.btn-default
+  background-color: transparent
+  border-color: $lightgray
+  color: $gray
+
+  &:hover,
+  &:active,
+  &:focus
+    border-color: $gray
+    color: $darkgray
+
+.btn-primary
+  background-color: $primary_color
+  border-color: darken($primary_color, 10%)
+  color: #fff
+
+  &:hover,
+  &:active,
+  &:focus
+    background-color: darken($primary_color, 10%)

@@ -1,0 +1,24 @@
+=reset
+    p
+        margin: 0
+        padding: 0
+
+//Clearfix
+=clearfix
+    &:after
+        clear: both
+        content: ""
+        display: table
+
+// Vendor prefixed
+$webkit: -webkit
+$moz: -moz
+$ms: -ms
+$o: -o
+
+=vendor-prefixed($attr, $value)
+    #{$webkit}-#{$attr}: $value
+    #{$moz}-#{$attr}: $value
+    #{$ms}-#{$attr}: $value
+    #{$o}-#{$attr}: $value
+    #{$attr}: $value
